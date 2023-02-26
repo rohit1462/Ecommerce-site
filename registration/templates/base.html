@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title tag -->
+    {% block title %}
+    <title>base page title</title>
+    {% endblock title %}
+    <!-- css link tag -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <!-- fontawsome tag -->
+    <script
+      src="https://kit.fontawesome.com/e1e8b8ff06.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <!-- body tag -->
+
+  {% block body %}
+  <body>
+    base template body
+  </body>
+  {% endblock body %}
+  <!-- script tag -->
+  <script src="{% static 'js/app.js' %}"></script>
+</html>

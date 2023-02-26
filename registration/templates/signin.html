@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %} 
+
+<!-- title tag -->
+{% block title %} signin page {% endblock title %}
+
+<!-- body tag -->
+{% block body %}
+<body>
+    <div class="login-box">
+        <img src="{% static 'images/logo/todo_logo.png' %}" alt="logo" class="logo" />
+        <h2>Sign in to TODO APP</h2>
+        <button>
+          <img src="{% static 'images/logo/google_logo.png' %}" alt="google" /> Sign in with Google
+        </button>
+        <button>
+          <img src="{% static 'images/logo/meta_logo.png' %}" alt="meta" /> Sign in with Meta
+        </button>
+        <hr />
+        <span>Or</span>
+  
+        <form>
+          <input type="text" placeholder="username" />
+          <input type="password" placeholder="password" />
+          <button>Login</button>
+        </form>
+        <button>Forgot Password</button>
+        <p>Don't have an account? <a href="#">Sign up</a></p>
+      </div>
+</body>
+{% endblock body %}
